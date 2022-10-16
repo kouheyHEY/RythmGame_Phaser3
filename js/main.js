@@ -1,5 +1,3 @@
-
-
 // Phaser3の設定データ
 const config = {
     type: Phaser.AUTO,
@@ -15,7 +13,7 @@ const config = {
 
     // シーン設定
     scene: [
-        GameScene
+        ChaserGameScene
     ],
 
     fps: {

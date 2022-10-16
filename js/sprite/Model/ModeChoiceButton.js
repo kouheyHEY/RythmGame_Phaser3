@@ -1,5 +1,0 @@
-class ModeChoiceButton {
-    constructor() {
-
-    }
-}
