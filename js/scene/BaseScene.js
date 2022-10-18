@@ -11,6 +11,8 @@ class BaseScene extends Phaser.Scene {
     constructor(_sceneName) {
         super({ key: _sceneName });
 
+        this.sceneName = _sceneName;
+
         // フラグの設定
     }
 
@@ -19,7 +21,12 @@ class BaseScene extends Phaser.Scene {
      * 記載例: <br>
      * this.load.image([imageID], [imageURL]); <br>
      */
-    loadImg() { }
+    loadImg() {
+        // 当シーンで使用する画像ファイルをロード
+        for (let imgName in FILE_NAME_IMG_LIST[this.sceneName]) {
+            this.load.image(imgName, FILE_NAME_IMG_LIST[this.sceneName][imgName]);
+        }
+    }
 
     /**
      * スプライトシートの読み込みを行う <br>

@@ -2,7 +2,12 @@
 const DIR_ASSETS = "./assets"
 const DIR_IMG = DIR_ASSETS + "/img"
 
-// 各画像ファイルのファイル名
-const FNAME_IMG_REV_ALL = "PuzzleUnit_All.png";
+// 各画像ファイルのアセット名
+const IMG_NAME_XXX = "XXX";
 
-const IMG_REV_ALL = "PuzzleUnitAll";
+// 画像ファイルロード用配列
+const FILE_NAME_IMG_LIST = {
+    "ChaserScene": {
+        IMG_NAME_XXX: "XXX.png",
+    }
+};
