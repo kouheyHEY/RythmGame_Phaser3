@@ -1,0 +1,3 @@
+class PointItem extends BaseSprite {
+
+}
