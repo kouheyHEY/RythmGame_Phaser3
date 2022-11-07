@@ -21,6 +21,17 @@ class ChaserGameScene extends BaseScene {
 
     }
 
+    loadSpriteSheet() {
+        this.load.spritesheet(
+            [SPRITE_NAME_PLAYER],
+            [FILE_NAME_PLAYER],
+            {
+                frameWidth: [UNIT_SIZE],
+                frameHeight: [UNIT_SIZE]
+            }
+        );
+    }
+
     // 画面生成時の実行関数
     create() {
         // 描画オブジェクトの生成
