@@ -1,8 +1,7 @@
 class MazeFactory {
-    constructor(_row, _col, _modeHalf) {
+    constructor(_row, _col) {
         this.row = _row;
         this.col = _col;
-        this.modeHalf = _modeHalf;
         this.mazeArr = Array();
     }
 
@@ -36,22 +35,5 @@ class MazeFactory {
         // ④作成したマップの一部分を複製+反転させ、マップ全体を作成する
 
         return;
-    }
-
-    checkIndp(_row, _col) {
-        let indp = true;
-        for (let r = -1; r < 1; r++) {
-            for (let c = -1; c < 1; c++) {
-                if (this.mazeArr[_row + r][_col + c] != MAZE_OBJ_BLANK) {
-                    if (r == 0 && c == 0) {
-                        continue;
-                    }
-                    indp = false;
-                    r = 2;
-                    break;
-                }
-            }
-        }
-        return indp;
     }
 }
